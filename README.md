@@ -5,13 +5,12 @@
 [Link to Source Code](https://github.com/Ivan24556/programmingportfolio/blob/main/src/Calculator/Calculator.pde)
 
 ## Overview
-[Write 2–3 sentences explaining what you are building
-and what a user can do with it.]
+I built a calculator from scratch and made it fully operable. It also has 23 buttons that all fully work. 
 
 ## Current Status
 Working:
-- [A feature you have tested]
-- [Another feature you have tested]
+- My Exponent button
+- The Pi Button 
 
 Still in progress:
 - [A requirement you are finishing]
