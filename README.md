@@ -1,5 +1,7 @@
 # OOP Calculator for Programming 1
 
+![Calculator](https://github.com/Ivan24556/programmingportfolio/blob/main/images/CalculaotorGitHUb.png?raw=true)
+
 ## Overview
 [Write 2–3 sentences explaining what you are building
 and what a user can do with it.]
