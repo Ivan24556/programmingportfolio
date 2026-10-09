@@ -36,7 +36,7 @@ void setup() {
   opButtons[5] = new Button(190, 400, 90, 60, '=');
   opButtons[6] = new Button(118, 400, 40, 60, '.');
   opButtons[7] = new Button(260, 135, 40, 40, 'C');
-  opButtons[8] = new Button(215, 135, 40, 40, 'D');
+  opButtons[8] = new Button(215, 135, 40, 40, '%');
   opButtons[9] = new Button(170, 135, 40, 40, '²');
   opButtons[10] = new Button(125, 135, 40, 40, 'π');
   opButtons[11] = new Button(80, 135, 40, 40, '√');
@@ -107,7 +107,9 @@ void performCalc() {
 
 void keyPressed() {
   println("keyCode: " + keyCode);
-  if (keyCode == 49 || keyCode == 97) {
+  if ( key == '%') {
+    handleEvent( '%', false);
+  } else if (keyCode == 49 || keyCode == 97) {
     handleEvent('1', true);
   } else if (keyCode == 50 || keyCode == 98) {
     handleEvent('2', true);
@@ -125,20 +127,21 @@ void keyPressed() {
     handleEvent('8', true);
   } else if (keyCode == 57 || keyCode == 105) {
     handleEvent('9', true);
-  }else if (keyCode == 48 || keyCode == 96) {
+  } else if (keyCode == 48 || keyCode == 96) {
     handleEvent('0', true);
-  }else if (keyCode == 45 || keyCode == 109) {
+  } else if (keyCode == 45 || keyCode == 109) {
     handleEvent('-', false);
-  }else if (keyCode == 107) {
+  } else if (keyCode == 107) {
     handleEvent('+', false);
-  }else if (keyCode == 47 || keyCode == 111) {
+  } else if (keyCode == 47 || keyCode == 111) {
     handleEvent('÷', false);
-  }else if (keyCode == 10) {
+  } else if (keyCode == 10) {
     handleEvent('=', false);
-  }else if ( keyCode == 106) {
+  } else if ( keyCode == 106) {
     handleEvent('x', false);
   }
 }
+
 
 void handleEvent(char val, boolean isNum) {
   if (isNum == true) {
@@ -223,7 +226,14 @@ void handleEvent(char val, boolean isNum) {
     } else if (clicked == '.') {
       if (!displayVal.contains(".")) {
         displayVal += ".";
-      } else if ( clicked == 'D') {
+      }
+    } else if ( clicked == '%') {
+      if (left == true) {
+        l= l / 100.0;
+        displayVal = str(l);
+      } else {
+        r= r / 100.0;
+        displayVal = str(r);
       }
     }
   }
