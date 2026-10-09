@@ -17,18 +17,17 @@ Still in progress:
 
 ## How to Run
 Built with Processing.
-Processing version: [Your version]
+Processing version: 4.0.1
 
 [After the project files are uploaded, identify the
 project folder and main .pde file to open and run.]
 
 ## Controls
 Mouse:
-[Explain how to use the buttons.]
+You can left click any of the buttons on the calculator to make it function 
 
 Keyboard:
-[List keys that currently work and what they do.
-Identify planned controls as not yet implemented.]
+You can use all the operation keys on a number pad on the right and all the numbers above the alphabet and the subtraction sign above the Alphabet.
 
 ## Project Files
 [Identify the main sketch and other tabs or assets
