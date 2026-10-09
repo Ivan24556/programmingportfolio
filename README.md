@@ -13,7 +13,7 @@ Working:
 - The Pi Button 
 
 Still in progress:
-- [A requirement you are finishing]
+- The Delete Button 
 
 ## How to Run
 Built with Processing.
