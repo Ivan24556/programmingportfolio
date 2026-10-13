@@ -61,8 +61,13 @@ void drawDisplay() {
   rectMode(CENTER);
   rect(width/2, 50, 290, 80);
   fill(0);
-  textAlign(RIGHT);
   textSize(45);
+  textAlign(RIGHT);
+  if(displayVal.length()>8) {
+    textSize(40);
+  } else if(displayVal.length()>10) {
+     textSize(30);
+  }
   text(displayVal, width-45, 80);
 }
 
@@ -139,6 +144,10 @@ void keyPressed() {
     handleEvent('=', false);
   } else if ( keyCode == 106) {
     handleEvent('x', false);
+  } else if (keyCode == 46 || keyCode == 110) {
+    handleEvent('.', false);
+  } else if (keyCode == 8) {
+    handleEvent('C', false);
   }
 }
 
