@@ -19,8 +19,6 @@ Still in progress:
 Built with Processing.
 Processing version: 4.0.1
 
-[After the project files are uploaded, identify the
-project folder and main .pde file to open and run.]
 
 ## Controls
 Mouse:
@@ -30,12 +28,10 @@ Keyboard:
 You can use all the operation keys on a number pad on the right and all the numbers above the alphabet and the subtraction sign above the Alphabet.
 
 ## Project Files
-[Identify the main sketch and other tabs or assets
-you will upload.]
+The main sketch is Calculator and the other tab is Button, it helped me build my buttons. 
 
 ## Testing
-[Record one test: actions, expected result,
-and actual result.]
+When i was testing exponents i thought it was going to be a long code, but it was easy enough and not complicated it actually works very smoothly. 
 
 ## Next Step
-[Name the specific behavior you will build or fix next.]
+I will want to make sure the calculator has limits and a display limit as well. 
